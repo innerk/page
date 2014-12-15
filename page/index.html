@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lirmi</title>
+	<meta name="author" content="Carlos Reyes" />
+	<meta name="description" content="Lirmi" />
+	<meta name="keywords"  content="planificacion,docente,profesores,evaluaciones," />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#cecece', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage','6thpage','7thpage'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Portada', 'Planificación', 'Evaluación', 'Clientes', 'Beneficios', 'Precios', 'Nosotros'],
+				
+				menu: '#navbar1',
+				afterLoad: function(anchorLink, index){
+
+					//section 2
+					if(index == 2){
+						//moving the image
+					$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+
+					}
+
+					//section 3
+					if(anchorLink == '3rdPage'){
+						//moving the image
+						$('#section2').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//section 3
+					if(anchorLink == '4thpage'){
+						//moving the image
+						$('#section3').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					//section 3
+					if(anchorLink == '5thpage'){
+						//moving the image
+						$('#section3').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					if(anchorLink == '6thpage'){
+						//moving the image
+						$('#section3').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}
+					if(anchorLink == '7thpage'){
+						//moving the image
+						$('#section3').find('.intro').delay(500).animate({
+							left: '0%'
+						}, 1500, 'easeOutExpo');
+					}	
+
+				}
+			});
+
+		});
+	</script>
+
+	<style>
+#section7{
+	background-color: #cecece;
+		padding: 6% 0 0 0;
+	}
+		/*#section1 p{
+			visibility:hidden;
+		}
+	
+		#section2 .intro{
+			left: -130%;
+			position:relative;
+		}
+	*/
+.navbar-inverse{
+	background: #f5f5f5;
+}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ><img src="imgs/lirmi.png" class="img-responsive" alt="Imagen responsive"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav nav-pills" id="navbar1">
+            <li class="active" data-menuanchor="firstPage"><a href="#firstPage">Portada</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">Planificación</a></li>
+			<li data-menuanchor="3rdPage"><a href="#3rdPage">Evaluación</a></li>
+			<li data-menuanchor="4thpage"><a href="#4thpage">Clientes</a></li>
+			<li data-menuanchor="5thpage"><a href="#5thpage">Beneficios</a></li>	
+			<li data-menuanchor="6thpage"><a href="#6thpage">Precios</a></li>
+			<li data-menuanchor="7thpage"><a href="#7thpage">Nosotros</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+
+
+
+<div id="fullpage">
+	<div class="section" id="section1">
+		<div class="intro">
+			
+		  <div class="row">
+		  	<div class="col-xs-1">
+		  	</div>
+ 			<div class="col-xs-5">
+ 				<div class="izquierda">	
+						<h1>Toda la gestion curricular de tu establecimiento en un solo lugar</h1>
+						
+						<h4>"La mas pertinente herramienta para planificar y evaluar, con la que he trabajado "</h4>
+						<br>
+						<h4>Jaime Gaete- Director liceo Jorge Alesandri.</h4>
+				</div>
+			</div>
+			<div class="col-xs-5">
+				<img src="imgs/1.png" alt="Cool" />	
+					<h1>1</h1>
+					adsasdsa
+			</div>
+			<div class="col-xs-1">
+		  	</div>
+		  </div>
+
+	</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			 <div class="row">
+		  	<div class="col-xs-1">
+		  	</div>
+ 			<div class="col-xs-5">
+ 				<div class="izquierda2">	
+ 						<img src="imgs/planificador_icon.png"/>
+						<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
+						
+						<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
+					 <div class="dentro">
+					 	<div class="imgizq">
+						<img src="imgs/mini_play_logo.png"/>
+						</div>
+						<div class="imgr">
+						<h4>Ver video</h4>
+						</div>
+						</div>
+						<br>
+						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
+						  <br>
+						 <br>
+						 O puedes llamarnos al 133
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<img src="imgs/1.png" alt="Cool" />	
+					<h1>1</h1>
+					adsasdsa
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="section" id="section3">
+		<div class="intro">
+				 <div class="row">
+ 		
+			<div class="col-xs-6">
+				<img src="imgs/1.png" alt="Cool" />	
+					<h1>1</h1>
+					adsasdsa
+			</div>
+				<div class="col-xs-5">
+ 				<div class="izquierda3">	
+ 						<img src="imgs/evaluador_icon.png"/>
+						<h1>El mas revolucionario sistema de evaluación</h1>
+						
+						<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
+				
+						
+						 <div class="dentro">
+						<img src="imgs/mini_play_logo.png"/>
+						<h4>Ver video</h4>
+						</div>
+						<br>
+						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
+						 <br>
+						 <br>
+						 O puedes llamarnos al 133
+				</div>
+			</div>
+			  	<div class="col-xs-1">
+		  	</div>
+		  </div>
+		</div>
+		</div>
+
+
+	<div class="section" id="section4">
+		<div class="intro">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Mas de de 45 colegios en todo Chile, confian en Lirmi.</h2>
+				</div>
+			</div>
+			<div class="row">
+			<div class="col-xs-2">
+				
+			</div>
+			<div class="col-xs-8">
+					<div class="conten">
+					<div class="square"><img src="imgs/01.jpg"/></div>
+					<div class="square"><img src="imgs/02.jpg"/></div>
+					<div class="square"><img src="imgs/03.jpg"/></div>
+					<div class="square"><img src="imgs/04.jpg"/></div>
+					<div class="square"><img src="imgs/05.jpg"/></div>
+					</div>
+					<div class="conten">
+					<div class="square"><img src="imgs/06.jpg"/></div>
+					<div class="square"><img src="imgs/07.jpg"/></div>
+					<div class="square"><img src="imgs/08.jpg"/></div>
+					<div class="square"><img src="imgs/09.jpg"/></div>
+					<div class="square"><img src="imgs/10.jpg"/></div>
+					</div>
+				</div>
+				
+				<div class="col-xs-2">
+				
+			</div>
+		</div>
+			<div class="row">
+			<div class="col-xs-2">
+				
+			</div>
+			<div class="col-xs-8">
+				<div class="video-content">
+					<div class="video">
+						<img src="imgs/mini_play_logo.png"/>
+					</div>
+					<div class="mensaje">
+						<h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum maiores animi delectus quod doloremque eveniet debitis, laudantium asperiores pariatur nam! Velit dicta hic totam, architecto molestiae dignissimos error, facere aspernatur"</h4>
+						<strong >asda</strong>
+				<h5>asdas</h5>
+					</div>
+				</div>
+				</div>
+				
+				<div class="col-xs-2">
+				
+			</div>
+				
+				</div>
+				
+			
+	</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="intro">
+			<h1>5</h1>
+			<p>Falta imagen</p>
+		</div>
+	</div>
+	<div class="section" id="section6">
+		<div class="intro">
+			<h1>6</h1>
+			<p> falta aprobacion</p>
+		</div>
+	</div>
+	<div class="section" id="section7">
+		<div class="intro">
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3">
+				<div class="lirmi">
+				<img src="imgs/logo_lirmi__nosotros.png"/></div>
+				</div>
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"></div>
+			</div>
+			<div class="row">
+				 <div class="pcontent">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-3"><div class="parrafo"><strong>Historia</strong>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam voluptatem nostrum, exercitationem placeat fugit vitae. Magni quasi, recusandae repellendus, sequi alias, molestias illum error dignissimos numquam nemo rem eum!</h4>
+			</div>	
+				</div>
+				<div class="col-xs-3">
+				<div class="parrafo">
+				<strong>Proposito</strong>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga libero a. Consequatur non nam veritatis ex, nostrum iste possimus molestias placeat ab eligendi similique facere iusto eum, debitis dignissimos.</h4>
+				</div>
+				</div>
+				<div class="col-xs-3"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8"><div class="fotos">
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				<div class="pic">
+				<img src="imgs/Login.png" class="img-circle"/>
+				</div>
+				</div></div>
+				<div class="col-xs-2"></div>		
+			</div>
+		  	<div class="row" id="redes">
+				<div class="col-xs-1">
+				<img src="imgs/corfo_logo.png"/>	
+				</div>
+				<div class="col-xs-1"><img src="imgs/incubatec_logo.png"/>	</div>
+				<div class="col-xs-8"></div>
+				<div class="col-xs-2"></div>
+			</div>
+		  
+		</div>
+	</div>
+
+	
+
+
+
+</div>
+</body>
+</html>
