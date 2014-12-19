@@ -73,6 +73,12 @@ h1{
 p{
 	font-size: 2em;
 }
+@media (min-width: @screen-sm-min) { 
+	h2,{
+		font-size: 12px;
+	}
+}
+
 /* Backgrounds will cover all the section
 	* --------------------------------------- */
 	#section1,
@@ -101,20 +107,23 @@ p{
 	}
 	#section3{
 		background-image: url(imgs/bg_evaluador.png);
-		padding: 6% 0 0 0;
+		padding: 3% 0 0 0;
 	}
 	#section4{
-	background-color: #cecece;
-		padding: 4% 0 0 0;
+		background-image: url(imgs/bg_clientes.jpg);
+		padding: 6% 0 0 0;
+	    h2 color:white;
+
 	}
 	.btn-primary{
 	background-color:#0092d9 ;
 	border: #0092d9 ;
-	width: 70%;
+	width: 250px;
 }
+
 #section7{
 		background-image: url(imgs/bg_nosotros.jpg);
-		padding: 4% 0 0 0;
+		padding: 2% 0 0 0;
 	}
 
 .intro p{
@@ -129,6 +138,12 @@ p{
 a {
 color: black !important;
 text-decoration: none;
+}
+#client>a{
+position: relative;
+display: block;
+ padding: 5px 5px; 
+
 }
 .btn-primary {
 color: #ffffff;
@@ -165,6 +180,15 @@ border-color: #0092da !important;
 color: #ffffff !important;
 background-color: #0092da !important;
 }
+.navbar .navbar-nav .navbar-inverse {
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: top !important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center !important;
+}
 
 /* Demos Menu
  * --------------------------------------- */
@@ -176,26 +200,35 @@ background-color: #0092da !important;
  }
  .izquierda{
  height:auto;
- margin-top: 10%;
+ margin-top: 5%;
  color: white;
  text-align: center;
+ padding-top: 1%; 
+ 
  }
+
  .izquierda2{
- 	margin-top: -5%;
- height: 700px;
+ 
+padding: 5%;
 color: white;
  text-align: left;
- padding-left: 10%;
- padding-right: 10%;
-  padding-top: 10%;
- padding-bottom: 10%;
+
  }
+
   .izquierda3{
- height: 550px;
+
 color: white;
   padding-left: 10%;
  padding-right: 10%;
  text-align: left;
+ }
+ .infografia{
+ height:auto;
+ margin-top: 5%;
+ color: white;
+ text-align: center;
+ padding-top: 1%; 
+ margin-left: 10%;
  }
 .full{
 	width: 100%;
@@ -209,17 +242,15 @@ color: white;
 }
 .dentro  {
 width: 100%;
+padding-top: 1px;
 }
 .imgizq{
 	display: inline;
-	background-color: blue;
-
+	float: left;
 }
 .imgizr{
 	display: inline;
-	background-color: blue
-	height: 200px;
-	width: 200px;
+
 }
 .square{
 	display: inline-block;
@@ -238,7 +269,7 @@ width: 100%;
             border-radius: 5px;
             	position:fixed;
 	top:10px;
-	left: 30%;
+	left: 35%;
 	z-index: 70;
 }
 
@@ -246,7 +277,7 @@ width: 100%;
 .video-content{
 	width: 100%;
 	height: 200px;
-	margin-top: 1%;
+	margin-top: 4%;
 	margin-bottom:20%; 
 	padding-left: 5%;
 	padding-right: 3%;
@@ -259,6 +290,7 @@ width: 100%;
 	background-color: blue;
 		display: inline-block;
 		float: left;
+
 }
 .mensaje{
  height: 100%;
@@ -273,14 +305,11 @@ width: 100%;
 
 }
 .pcontent{
-padding: 20px;
-
+	
 margin-top: 1%;
 }
 .lirmi{
-margin-top: -50px;
-margin-bottom: 0px;
-
+margin-top: 5%;
 float: left;
 }
 .parrafo{
@@ -291,12 +320,21 @@ color: white;
 display: inline;
 
 }
-.redes{
-margin-top: 30px; 
+.pic2{
+display: inline;
+background-color: white;	
+height: 120px;
+width: 120px;	
+border-radius: 50%;
+}
+#redes{
+	margin-top: 3%;
+	bottom: 0px;
 }
 .fotos{
-padding: 30px;		
-}
+padding: 30px;
+display: inline;
+float: right; }
 .navbar-brand {
 padding: 10px 15px 20.5px !important;
 }
@@ -306,10 +344,16 @@ margin-right: 20px;
 }
 .cole{
 	padding: 1%;
-	margin-bottom: 1%;
+	margin-bottom: 0,5%;
+}
+.tab-content{
+	color: white;
 }
 .conten{
 	margin-bottom: 10px;
+	height: 100%;
+	width: 100%;
+	background-color: green;
 }
 .vid{
 	 height:auto;

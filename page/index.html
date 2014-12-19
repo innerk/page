@@ -9,12 +9,13 @@
 	<meta name="keywords"  content="planificacion,docente,profesores,evaluaciones," />
 	<meta name="Resource-type" content="Document" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
-
+	<script type="text/javascript" src="dist/js/jquery-2.1.3.js"></script>
+	  <script type="text/javascript" src="dist/js/bootstrap.js"></script>
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -23,17 +24,21 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
+ 	
+ 
+  	<script type="text/javascript" src="jquery.fullPage.js"></script>
 	<script type="text/javascript" src="examples.js"></script>
+  
+	
+	
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#cecece', '#ccddff'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage','6thpage','7thpage'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','7thpage'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['Portada', 'Planificación', 'Evaluación', 'Clientes', 'Beneficios', 'Precios', 'Nosotros'],
+				navigationTooltips: ['Portada', 'Planificación', 'Evaluación', 'Clientes','Nosotros'],
 				
 				menu: '#navbar1',
 				afterLoad: function(anchorLink, index){
@@ -56,19 +61,6 @@
 					}
 					//section 3
 					if(anchorLink == '4thpage'){
-						//moving the image
-						$('#section3').find('.intro').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-					}
-					//section 3
-					if(anchorLink == '5thpage'){
-						//moving the image
-						$('#section3').find('.intro').delay(500).animate({
-							left: '0%'
-						}, 1500, 'easeOutExpo');
-					}
-					if(anchorLink == '6thpage'){
 						//moving the image
 						$('#section3').find('.intro').delay(500).animate({
 							left: '0%'
@@ -105,8 +97,7 @@
 
 </head>
 <body>
-	<div class="row">
-	<div class="col-xs-12">
+	
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -124,64 +115,54 @@
 			<li data-menuanchor="secondPage"><a href="#secondPage">Planificación</a></li>
 			<li data-menuanchor="3rdPage"><a href="#3rdPage">Evaluación</a></li>
 			<li data-menuanchor="4thpage"><a href="#4thpage">Clientes</a></li>
-			<li data-menuanchor="5thpage"><a href="#5thpage">Beneficios</a></li>	
-			<li data-menuanchor="6thpage"><a href="#6thpage">Precios</a></li>
 			<li data-menuanchor="7thpage"><a href="#7thpage">Nosotros</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-</div>
-</div>
 
 
 <div id="fullpage">
 	<div class="section" id="section1">
-		<div class="intro">
-			
-		  <div class="row">
-		  	<div class="col-xs-1">
-		  	</div>
- 			<div class="col-xs-10">
+     <div class="row">
+		<div class="col-xs-1 col-md-1">
+		  </div>
+ 			<div class="col-xs-10 col-md-10">
  				<div class="izquierda">	
  					<div class="first">
 						Toda la gestion curricular de tu establecimiento en un solo lugar
-						</div>
+					 </div>
 						<br>
 						<h3><i>"La más pertinente herramienta para planificar y evaluar, con la que he trabajado "</i></h3>
 						<h4>Jaime Gaete- Director liceo Jorge Alesandri.</h4>
 						<br>
-						<div class="boton">
 						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
-						 </div>
 						  <br>
 				</div>
 			</div>
-		
-			<div class="col-xs-1">
-		  	</div>
+		<div class="col-xs-1 col-md-1">
+		 </div>
 		  </div>
 
-	</div>
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			 <div class="row">
-		  	<div class="col-xs-1">
+	  </div>
+	  <div class="section" id="section2">
+	   <div class="intro">
+		 <div class="row">
+		  	<div class="col-xs-1 col-md-1 col-sm-1">
 		  	</div>
- 			<div class="col-xs-5">
+ 			<div class="col-xs-10 col-md-5 col-sm-5">
  				<div class="izquierda2">	
  						<img src="imgs/planificador_icon.png"/>
 						<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
 						
 						<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
 					 <div class="dentro">
-					 	<div class="imgizq">
-						<img src="imgs/mini_play_logo.png"/>
-						</div>
-						<div class="imgizr">
-						<h4>Ver video</h4>
-						</div>
+						 	<div class="imgizq">
+								<img src="imgs/mini_play_logo.png"/>
+							</div>
+							<div class="imgizr">
+								<h4>Ver video</h4>
+							</div>
 						</div>
 						<br>
 						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
@@ -190,10 +171,10 @@
 						 O puedes llamarnos al 133
 				</div>
 			</div>
-			<div class="col-xs-6">
-				<img src="imgs/1.png" alt="Cool" />	
-					<h1>1</h1>
-					adsasdsa
+			<div class="col-xs-1 col-md-5 col-sm-5">
+				<div class="izquierda">
+				  <img src="imgs/gantt.png" />
+				</div>
 			</div>
 		  </div>
 		</div>
@@ -202,12 +183,14 @@
 	<div class="section" id="section3">
 		<div class="intro">
 				 <div class="row">
- 		
-			<div class="col-xs-6">
-				<img src="imgs/1.png" alt="Cool" />	
-					<h1>1</h1>
-					adsasdsa
+			<div class="col-xs-5">
+			  <div class="infografia">
+				<img src="imgs/infografía.png" alt="Cool" />	
+			</div>		
 			</div>
+			 		  	<div class="col-xs-1">
+		  	</div>
+
 				<div class="col-xs-5">
  				<div class="izquierda3">	
  						<img src="imgs/evaluador_icon.png"/>
@@ -216,9 +199,13 @@
 						<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
 				
 						
-						 <div class="dentro">
-						<img src="imgs/mini_play_logo.png"/>
-						<h4>Ver video</h4>
+					<div class="dentro">
+						 	<div class="imgizq">
+								<img src="imgs/mini_play_logo.png"/>
+							</div>
+							<div class="imgizr">
+								<h4>Ver video</h4>
+							</div>
 						</div>
 						<br>
 						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
@@ -238,98 +225,85 @@
 			<div class="row">
 				<div class="col-xs-12" >
 					<div class="cole">
-					<h2> <strong>Mas de de 45 colegios en todo Chile, confian en Lirmi.</strong></h2>
+					<h2  style="color:#ffffff"> <strong>Mas de de 45 colegios en todo Chile, confian en Lirmi.</strong></h2>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 			<div class="col-xs-2">
-				
 			</div>
-			<div class="col-xs-8">
-					<div class="conten">
-					<div class="square"><img src="imgs/01.png"/></div>
-					<div class="square"><img src="imgs/02.png"/></div>
-					<div class="square"><img src="imgs/03.png"/></div>
-					<div class="square"><img src="imgs/04.png"/></div>
-					<div class="square"><img src="imgs/05.png"/></div>
-					</div>
-					<div class="conten">
-					<div class="square"><img src="imgs/06.png"/></div>
-					<div class="square"><img src="imgs/07.png"/></div>
-					<div class="square"><img src="imgs/08.png"/></div>
-					<div class="square"><img src="imgs/09.png"/></div>
-					<div class="square"><img src="imgs/10.png"/></div>
-					</div>
-				</div>
-				
+		  <div class="col-xs-8">
+			<div class="fotos">				
+						<div class="pic">
+							   	<img src="imgs/01_Colegio_Emilia_Urruatia.png" class="img-circle"/>
+						</div>
+							<div class="pic">
+								  	 <img src="imgs/02_Colegio_Dr_Guillermo_Velasco_Barros.png" class="img-circle"/>
+							</div>
+								<div class="pic">
+									  <img src="imgs/03_Colegio_Domingo_Faustino_Sarmiento.png" class="img-circle"/>
+								</div>	
+									<div class="pic">
+										  <img src="imgs/04_Liceo_Ramon_Freire.png" class="img-circle"/>
+									</div>
+									<div class="pic">
+											  <img src="imgs/05_Colegio_Metodista_Temuco.png" class="img-circle"/>
+									</div>
+               
+                    
+							
+  								
+   								
+  										  <img src="imgs/06_Colegio_Particular_Santa_Maria.png" class="img-circle"/>
+  										<img src="imgs/07_Liceo_Jorge_Alessandri.png" class="img-circle"/>
+  									 <img src="imgs/08_Liceo_Mariano_Latorre.png" class="img-circle"/>
+    							  <img src="imgs/09_Liceo_Municipal_Maria_Pinto.png" class="img-circle"/>
+      						  <img src="imgs/10_Colegio_El_Pilar.png" class="img-circle"/>
+
+
+		</div>		
+					</div>			
 				<div class="col-xs-2">
 				
 			</div>
 		</div>
 			<div class="row">
-			<div class="col-xs-2">
-				
-			</div>
-			<div class="col-xs-8">
-				<div class="video-content">
-					<div class="video">
-						<img src="imgs/mini_play_logo.png"/>
-					</div>
-					<div class="mensaje">
-						<h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum maiores animi delectus quod doloremque eveniet debitis, laudantium asperiores pariatur nam! Velit dicta hic totam, architecto molestiae dignissimos error, facere aspernatur"</h4>
-						<strong >asda</strong>
-				<h5>asdas</h5>
-					</div>
-				</div>
-				</div>
-				
-				<div class="col-xs-2">
-				
-			</div>
-				
-				</div>
-				
+			 <div class="col-xs-2">	
+		      </div>
+			   <div class="col-xs-8">
 			
-	</div>
-	</div>
-	<div class="section" id="section5">
-		<div class="intro">
-			<h1>5</h1>
-			<p>Falta imagen</p>
-		</div>
-	</div>
-	<div class="section" id="section6">
-		<div class="intro">
-			<h1>6</h1>
-			<p> falta aprobacion</p>
-		</div>
-	</div>
+
+				</div>	
+				 <div class="col-xs-2">
+		        	</div>
+				</div>	
+	          </div>
+	        </div>
 	<div class="section" id="section7">
 		<div class="intro">
 			<div class="row">
-				<div class="col-xs-3"></div>
-				<div class="col-xs-3">
+				<div class="col-xs-1 col-sm-3"></div>
+				<div class="col-xs-1 col-sm-3">
 				<div class="lirmi">
-				<img src="imgs/logo_lirmi__nosotros.png"/></div>
+				<img src="imgs/logo_lirmi__nosotros.png" /></div>
 				</div>
-				<div class="col-xs-3"></div>
-				<div class="col-xs-3"></div>
+				<div class="col-xs-3 col-xs-3"></div>
+				<div class="col-xs-3 col-xs-3"></div>
 			</div>
 			<div class="row">
 				 <div class="pcontent">
-				<div class="col-xs-3"></div>
-				<div class="col-xs-3"><div class="parrafo"><strong>Historia</strong>
+				<div class="col-xs-1 col-md-3"></div>
+				<div class="col-xs-5 col-md-3"><div class="parrafo"><h3><strong>Historia</strong></h3>
 				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam voluptatem nostrum, exercitationem placeat fugit vitae. Magni quasi, recusandae repellendus, sequi alias, molestias illum error dignissimos numquam nemo rem eum!</h4>
 			</div>	
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-5 col-md-3">
 				<div class="parrafo">
-				<strong>Proposito</strong>
+				<h3><strong>Proposito</strong></h3>
 				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga libero a. Consequatur non nam veritatis ex, nostrum iste possimus molestias placeat ab eligendi similique facere iusto eum, debitis dignissimos.</h4>
 				</div>
 				</div>
-				<div class="col-xs-3"></div>
+				<div class="col-xs-1 col-md-3"></div>
 				</div>
 			</div>
 			<div class="row">
@@ -370,19 +344,25 @@
 			</div>
 				<div class="col-xs-1-offset"></div>		
 			</div>
-		  	<div class="row">
+		  	<div class="row" id="redes">
 				<div class="col-xs-1">
-					<div class="redes">
+					
 				<img src="imgs/corfo_logo.png"/>	
-			</div>	
+			
 			</div>
 				<div class="col-xs-1">
-					<div class="redes">
+					
 					<img src="imgs/incubatec_logo.png"/>
-					</div>
+					
 						</div>
-				<div class="col-xs-8"></div>
-				<div class="col-xs-2"></div>
+				<div class="col-xs-8">
+					
+				</div>
+				<div class="col-xs-2">
+						<a href="">	<img src="imgs/facebook_icon.png"/></a>
+						<a href="">	<img src="imgs/twitter_icon-01.png"/> </a>
+									<a href=""><img src="imgs/youtube_icon-01.png"/></a>
+				</div>
 			</div>
 		  
 		</div>
@@ -393,5 +373,6 @@
 
 
 </div>
+
 </body>
 </html>
