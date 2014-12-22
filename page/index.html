@@ -14,327 +14,421 @@
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
-	<![endif]-->
+		<![endif]-->
+		<style>
+		.navbar-inverse{
+			background: #f5f5f5;
+		}	
+		</style>
 
+	</head>
+	<body>
 
-	<style>
-
-		/*#section1 p{
-			visibility:hidden;
-		}
-	
-		#section2 .intro{
-			left: -130%;
-			position:relative;
-		}
-	*/
-.navbar-inverse{
-	background: #f5f5f5;
-}
-	</style>
-
-</head>
-<body>
-	
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" ><img src="imgs/lirmi.png" class="img-responsive" alt="Imagen responsive"/></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-          <ul class="nav nav-pills" id="navbar1">
-            <li class="active" data-menuanchor="firstPage"><a href="#firstPage">Portada</a></li>
-			<li data-menuanchor="secondPage"><a href="#secondPage">Planificación</a></li>
-			<li data-menuanchor="3rdPage"><a href="#3rdPage">Evaluación</a></li>
-			<li data-menuanchor="4thpage"><a href="#4thpage">Clientes</a></li>
-			<li data-menuanchor="7thpage"><a href="#7thpage">Nosotros</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-
-<div id="fullpage">
-	<div class="section" id="section1">
-     <div class="row">
-		<div class="col-xs-1 col-md-1">
-		  </div>
- 			<div class="col-xs-10 col-md-10">
- 				<div class="izquierda">	
- 					<div class="first">
-						Toda la gestion curricular de tu establecimiento en un solo lugar
-					 </div>
-						<br>
-						<h3><i>"La más pertinente herramienta para planificar y evaluar, con la que he trabajado "</i></h3>
-						<h4>Jaime Gaete- Director liceo Jorge Alesandri.</h4>
-						<br>
-						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
-						  <br>
-				</div>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="login">
+				<a href=""><img src="imgs/Login.png" /></a>
 			</div>
-		<div class="col-xs-1 col-md-1">
-		 </div>
-		  </div>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" ><img src="imgs/lirmi.png" class="img-responsive" alt="Imagen responsive"/></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+					<ul class="nav nav-pills" id="navbar1">
+						<li class="active" data-menuanchor="firstPage"><a href="#firstPage">Portada</a></li>
+						<li data-menuanchor="secondPage"><a href="#secondPage">Planificación</a></li>
+						<li data-menuanchor="3rdPage"><a href="#3rdPage">Evaluación</a></li>
+						<li data-menuanchor="4thpage"><a href="#4thpage">Clientes</a></li>
+						<li data-menuanchor="7thpage"><a href="#7thpage">Nosotros</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
 
-	  </div>
-	  <div class="section" id="section2">
-	   <div class="intro">
-		 <div class="row">
-		  	<div class="col-xs-1 col-md-1 col-sm-1">
-		  	</div>
- 			<div class="col-xs-10 col-md-5 col-sm-5">
- 				<div class="izquierda2">	
- 						<img src="imgs/planificador_icon.png"/>
-						<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
-						
-						<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
-					 <div class="dentro">
-						 	<div class="imgizq">
-								<img src="imgs/mini_play_logo.png"/>
+
+		<div id="fullpage">
+			<div class="section" id="section1">
+				<div class="row">
+					<div class="col-xs-0 col-md-1">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<div class="izquierda">	
+							<div class="first">
+								Toda la gestion curricular de tu establecimiento en un solo lugar
 							</div>
-							<div class="imgizr">
-								<h4>Ver video</h4>
+							<br>
+							<h3><i>"La más pertinente herramienta para planificar y evaluar, con la que he trabajado "</i></h3>
+							<h4>Jaime Gaete- Director liceo Jorge Alesandri.</h4>
+							<br>
+							<button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
+							<br>
+						</div>
+					</div>
+					<div class="col-xs-0 col-md-1">
+					</div>
+				</div>
+
+			</div>
+			<div class="section" id="section2">
+				<div class="intro">
+					<div class="row">
+						<div class="col-md-1 col-sm-1">
+						</div>
+						<div class="col-xs-12 col-md-5 col-sm-5">
+							<div class="izquierda2">	
+								<img src="imgs/planificador_icon.png" class="img-responsive"/>
+								<h1>Diseña tus planificaciones de forma eficiente y atractiva.</h1>
+
+								<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
+								<div class="dentro">
+									<div class="imgizq">
+										<img src="imgs/mini_play_logo.png"/>
+									</div>
+									<div class="imgizr">
+										<h4>Ver video</h4>
+									</div>
+								</div>
+								<br>
+								<button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
+								<br>
+
+								O puedes llamarnos al 133
 							</div>
 						</div>
-						<br>
-						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
-						  <br>
-					
-						 O puedes llamarnos al 133
-				</div>
-			</div>
-			<div class="col-xs-1 col-md-5 col-sm-5">
-				<div class="izquierda">
-				  <img src="imgs/gantt.png" />
-				</div>
-			</div>
-		  </div>
-		</div>
-	</div>
-
-	<div class="section" id="section3">
-		<div class="intro">
-				 <div class="row">
-			<div class="col-xs-5">
-			  <div class="infografia">
-				<img src="imgs/infografía.png" alt="Cool" />	
-			</div>		
-			</div>
-			 		  	<div class="col-xs-1">
-		  	</div>
-
-				<div class="col-xs-5">
- 				<div class="izquierda3">	
- 						<img src="imgs/evaluador_icon.png"/>
-						<h1>El mas revolucionario sistema de evaluación</h1>
-						
-						<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
-				
-						
-					<div class="dentro">
-						 	<div class="imgizq">
-								<img src="imgs/mini_play_logo.png"/>
-							</div>
-							<div class="imgizr">
-								<h4>Ver video</h4>
+						<div class="  col-md-5 col-sm-5">
+							<div class="izquierda">
+								<a id="single_1" href="imgs/gantt.png"><img src="imgs/gantt.png" class="img-responsive"/></a>
 							</div>
 						</div>
-						<br>
-						 <button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
-						 <br>
-						 O puedes llamarnos al 133
-				</div>
-			</div>
-			  	<div class="col-xs-1">
-		  	</div>
-		  </div>
-		</div>
-		</div>
-
-
-	<div class="section" id="section4">
-		<div class="intro">
-			<div class="row">
-				<div class="col-xs-12" >
-					<div class="cole">
-					<h2  style="color:#ffffff"> <strong>Mas de de 45 colegios en todo Chile, confian en Lirmi.</strong></h2>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-			<div class="col-xs-2">
-			</div>
-		  <div class="col-xs-8">
-			<div class="fotos">				
-					  <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
-							   	<img src="imgs/01_Colegio_Emilia_Urruatia.png" class="img-circle"/>
-					 </a>
-						
-								  	 <img src="imgs/02_Colegio_Dr_Guillermo_Velasco_Barros.png" class="img-circle"/>
-							
-								
-									  <img src="imgs/03_Colegio_Domingo_Faustino_Sarmiento.png" class="img-circle"/>
-								
-									
-									  <img src="imgs/04_Liceo_Ramon_Freire.png" class="img-circle"/>
-									
-											  <img src="imgs/05_Colegio_Metodista_Temuco.png" class="img-circle"/>
-									
-               
-                    
-							
-  								
-   								
-  										  <img src="imgs/06_Colegio_Particular_Santa_Maria.png" class="img-circle"/>
-  										<img src="imgs/07_Liceo_Jorge_Alessandri.png" class="img-circle"/>
-  									 <img src="imgs/08_Liceo_Mariano_Latorre.png" class="img-circle"/>
-    							  <img src="imgs/09_Liceo_Municipal_Maria_Pinto.png" class="img-circle"/>
-      						  <img src="imgs/10_Colegio_El_Pilar.png" class="img-circle"/>
 
-
-		</div>		
-					</div>			
-				<div class="col-xs-2">
-				
-			</div>
-		</div>
-			<div class="row">
-			 <div class="col-xs-2">	
-		      </div>
-			   <div class="col-xs-8">
-			
-
-				</div>	
-				 <div class="col-xs-2">
-		        	</div>
-				</div>	
-	          </div>
-	        </div>
-	<div class="section" id="section7">
-		<div class="intro">
-			<div class="row">
-				<div class="col-xs-1 col-sm-3"></div>
-				<div class="col-xs-1 col-sm-3">
-				<div class="lirmi">
-				<img src="imgs/logo_lirmi__nosotros.png" /></div>
-				</div>
-				<div class="col-xs-3 col-xs-3"></div>
-				<div class="col-xs-3 col-xs-3"></div>
-			</div>
-			<div class="row">
-				 <div class="pcontent">
-				<div class="col-xs-1 col-md-3"></div>
-				<div class="col-xs-5 col-md-3"><div class="parrafo"><h3><strong>Historia</strong></h3>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam voluptatem nostrum, exercitationem placeat fugit vitae. Magni quasi, recusandae repellendus, sequi alias, molestias illum error dignissimos numquam nemo rem eum!</h4>
-			</div>	
-				</div>
-				<div class="col-xs-5 col-md-3">
-				<div class="parrafo">
-				<h3><strong>Proposito</strong></h3>
-				<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga libero a. Consequatur non nam veritatis ex, nostrum iste possimus molestias placeat ab eligendi similique facere iusto eum, debitis dignissimos.</h4>
-				</div>
-				</div>
-				<div class="col-xs-1 col-md-3"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2"></div>
-				<div class="col-xs-8">
-				<div class="fotos">
-				<div class="pic">
-				<img src="imgs/andres_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/cristian_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/emerson_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/felipe_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/isabel_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/Jorge_icon.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/marcelo_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/osvaldo_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/patricio_icon-01.png" class="img-circle"/>
-				</div>
-				<div class="pic">
-				<img src="imgs/rodrigo_icon-01.png" class="img-circle"/>
-				</div>
-				</div>
-			</div>
-				<div class="col-xs-1-offset"></div>		
-			</div>
-		  	<div class="row" id="redes">
-				<div class="col-xs-1">
-					
-				<img src="imgs/corfo_logo.png"/>	
-			
-			</div>
-				<div class="col-xs-1">
-					
-					<img src="imgs/incubatec_logo.png"/>
-					
+			<div class="section" id="section3">
+				<div class="intro">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="infografia">
+								<a id="single_2" href="imgs/gantt.png"><img src="imgs/infografía.png" alt="Cool" class="img-responsive" />	</a>
+							</div>		
 						</div>
-				<div class="col-xs-8">
-					
-				</div>
-				<div class="col-xs-2">
-						<a href="">	<img src="imgs/facebook_icon.png"/></a>
-						<a href="">	<img src="imgs/twitter_icon-01.png"/> </a>
-									<a href=""><img src="imgs/youtube_icon-01.png"/></a>
+						<div class="col-xs-1">
+						</div>
+
+						<div class="col-xs-5">
+							<div class="izquierda3">	
+								<img src="imgs/evaluador_icon.png"/>
+								<h1>El mas revolucionario sistema de evaluación</h1>
+
+								<h5>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum odit sapiente, culpa sequi dolorum, ipsa labore consequuntur repellat illum, voluptates, id praesentium obcaecati voluptatibus alias nihil. Quod ullam esse vitae!"</h5>
+
+
+								<div class="dentro">
+									<div class="imgizq">
+										<img src="imgs/mini_play_logo.png"/>
+									</div>
+									<div class="imgizr">
+										<h4>Ver video</h4>
+									</div>
+								</div>
+								<br>
+								<button type="button" class="btn btn-primary">Solicita una llamada al instante</button>
+								<br>
+								O puedes llamarnos al 133
+							</div>
+						</div>
+						<div class="col-xs-1">
+						</div>
+					</div>
 				</div>
 			</div>
-		  
-		</div>
-	</div>
 
-	
-<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
-        <div class="modal-content">
-            <div class="modal-body">
-                <img src="" alt="" />
-            </div>
-        </div>
-    </div>
+
+			<div class="section" id="section4">
+				<div class="intro">
+					<div class="row">
+						<div class="col-xs-12" >
+							<div class="cole">
+								<h2  style="color:#ffffff"> <strong>Mas de de 45 colegios en todo Chile, confian en Lirmi.</strong></h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2">
+						</div>
+						<div class="col-xs-8">
+							<div class="fotos">		
+								<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a class="colegios" href="#home" aria-controls="home" role="tab" data-toggle="tab">
+    	<img src="imgs/01_Colegio_Emilia_Urruatia.png"/></a></li>
+    <li role="presentation"><a class="colegios" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+    	<img src="imgs/02_Colegio_Dr_Guillermo_Velasco_Barros.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+    	<img src="imgs/03_Colegio_Domingo_Faustino_Sarmiento.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole4" aria-controls="cole4" role="tab" data-toggle="tab">
+    	<img src="imgs/04_Liceo_Ramon_Freire.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole5" aria-controls="cole5" role="tab" data-toggle="tab">
+    	<img src="imgs/05_Colegio_Metodista_Temuco.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole6" aria-controls="cole6" role="tab" data-toggle="tab">
+    	<img src="imgs/06_Colegio_Particular_Santa_Maria.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole7" aria-controls="cole7" role="tab" data-toggle="tab">	
+    	<img src="imgs/07_Liceo_Jorge_Alessandri.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole8" aria-controls="cole8" role="tab" data-toggle="tab">
+    	<img src="imgs/08_Liceo_Mariano_Latorre.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole9" aria-controls="cole9" role="tab" data-toggle="tab">
+    	<img src="imgs/09_Liceo_Municipal_Maria_Pinto.png" /></a></li>
+    <li role="presentation"><a class="colegios" href="#cole10" aria-controls="cole10" role="tab" data-toggle="tab">
+    	<img src="imgs/10_Colegio_El_Pilar.png" /></a></li>
+
+
+  </ul>
 
 
 </div>
-	<script type="text/javascript" src="dist/js/jquery-2.1.3.js"></script>
-	  <script type="text/javascript" src="dist/js/bootstrap.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
- 	
- 
-  	<script type="text/javascript" src="jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-  
-	
-	
-	<script type="text/javascript">
+</div>		
+						</div>			
+						<div class="col-xs-2">
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2">	
+						</div>
+						<div class="col-xs-8">								  
+								  <div class="tab-content">
+								    <div role="tabpanel" class="tab-pane active" id="home">
+									  <div class="video-content">
+									  	<div class="video">
+									  		<ul class="list">
+     <li> <a class="fancybox-media" href="http://vimeo.com/36031564">Vimeo</a> </li>
+       										   </ul>
+									  	</div>
+									  	<div class="mensaje">
+									  	  	<h4>“…Yo felicito a este grupo de jóvenes, porque, en realidad lograron identificar una herramienta y crear algo que realmente hace buen uso de la tecnología y que apunta a lo que se necesita en el aula…”</h4>
+									  	<strong>Patricia Torres (UTP), Colegio Mariano Latorre</strong>
+									  	<h5></h5>		
+									  	</div>
+
+									  </div>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="profile">
+								    	<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">
+									  		  	<h4>“…Esta plataforma a mi me entrega una visión general en cada momento que quiero saber por ejemplo: El profesor de Historia de segundo básico va en la clase Nº 7 de 34, ¡Y eso, es fantástico!…”</h4><br>
+									  	<strong>Cecilia Seguel (UTP), Colegio Santa María</strong>
+									  	<h5></h5>		
+									  	</div>
+									  	
+									  </div>
+									</div>
+								    <div role="tabpanel" class="tab-pane" id="messages">
+										<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">
+									  			  	<h4>“…Les hizo sentido a todos los profesores, nos parece muy apropiada, que nos va a ayudar a optimizar los tiempos, que es un factor muy determinante en nuestra labor, ya que siempre nos falta tiempo…”</h4>
+									  	<strong>Ana María Hinojosa (UTP), Colegio Arrayán.</strong>
+									  	<h5></h5>	
+									  	</div>
+									  	
+									  </div>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="cole4">
+
+								    	<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="cole5">
+										<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="cole6">
+								    	<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+									</div>
+								    <div role="tabpanel" class="tab-pane" id="cole7"><div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+									</div>
+								    <div role="tabpanel" class="tab-pane" id="cole8">
+								    	<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+									</div>
+								    <div role="tabpanel" class="tab-pane" id="cole9">
+								    	<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+									</div>
+								    <div role="tabpanel" class="tab-pane" id="cole10">
+								    	<div class="video-content">
+									  	<div class="video">huh</div>
+									  	<div class="mensaje">hjbhj</div>
+									  	
+									  </div>
+									</div>
+								  </div>
+						</div>	
+						<div class="col-xs-2">
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="section" id="section7">
+				<div class="intro">
+					<div class="row">
+						<div class="col-xs-1 col-sm-3"></div>
+						<div class="col-xs-1 col-sm-3">
+							<div class="lirmi">
+								<img src="imgs/logo_lirmi__nosotros.png" /></div>
+							</div>
+							<div class="col-xs-3 col-xs-3"></div>
+							<div class="col-xs-3 col-xs-3"></div>
+						</div>
+						<div class="row">
+							<div class="pcontent">
+								<div class="col-xs-1 col-md-3"></div>
+								<div class="col-xs-5 col-md-3"><div class="parrafo"><h3><strong>Historia</strong></h3>
+									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ipsam voluptatem nostrum, exercitationem placeat fugit vitae. Magni quasi, recusandae repellendus, sequi alias, molestias illum error dignissimos numquam nemo rem eum!</h4>
+								</div>	
+							</div>
+							<div class="col-xs-5 col-md-3">
+								<div class="parrafo">
+									<h3><strong>Proposito</strong></h3>
+									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fuga libero a. Consequatur non nam veritatis ex, nostrum iste possimus molestias placeat ab eligendi similique facere iusto eum, debitis dignissimos.</h4>
+								</div>
+							</div>
+							<div class="col-xs-1 col-md-3"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2"></div>
+						<div class="col-xs-8">
+							<div class="fotos">
+								<div class="pic">
+									<img src="imgs/andres_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/cristian_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/emerson_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/felipe_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/isabel_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/Jorge_icon.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/marcelo_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/osvaldo_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/patricio_icon-01.png" class="img-circle"/>
+								</div>
+								<div class="pic">
+									<img src="imgs/rodrigo_icon-01.png" class="img-circle"/>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-1-offset"></div>		
+					</div>
+					<div class="row" id="redes">
+						<div class="col-xs-1">
+
+							<img src="imgs/corfo_logo.png"/>	
+
+						</div>
+						<div class="col-xs-1">
+
+							<img src="imgs/incubatec_logo.png"/>
+
+						</div>
+						<div class="col-xs-8">
+
+						</div>
+						<div class="col-xs-2">
+							<a href="">	<img src="imgs/facebook_icon.png"/></a>
+							<a href="">	<img src="imgs/twitter_icon-01.png"/> </a>
+							<a href=""><img src="imgs/youtube_icon-01.png"/></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+   						askdnasndaskn
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+
+
+
+		<script type="text/javascript" src="dist/js/jquery-2.1.3.js"></script>
+		<script type="text/javascript" src="dist/js/bootstrap.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="jquery.fullPage.js"></script>
+		<script type="text/javascript" src="examples.js"></script>
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#cecece', '#ccddff'],
@@ -342,14 +436,14 @@
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['Portada', 'Planificación', 'Evaluación', 'Clientes','Nosotros'],
-				
+
 				menu: '#navbar1',
 				afterLoad: function(anchorLink, index){
 
 					//section 2
 					if(index == 2){
 						//moving the image
-					$('#section2').find('.intro').delay(500).animate({
+						$('#section2').find('.intro').delay(500).animate({
 							left: '0%'
 						}, 1500, 'easeOutExpo');
 
@@ -379,35 +473,64 @@
 				}
 			});
 
-		});
+});
+$(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
 
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
 
 $(document).ready(function() {
-    var $lightbox = $('#lightbox');
-    
-    $('[data-target="#lightbox"]').on('click', function(event) {
-        var $img = $(this).find('img'), 
-            src = $img.attr('src'),
-            alt = $img.attr('alt'),
-            css = {
-                'maxWidth': $(window).width() - 100,
-                'maxHeight': $(window).height() - 100
-            };
-    
-        $lightbox.find('.close').addClass('hidden');
-        $lightbox.find('img').attr('src', src);
-        $lightbox.find('img').attr('alt', alt);
-        $lightbox.find('img').css(css);
+    $("#single_1").fancybox({
+          helpers: {
+              title : {
+                  type : 'float'
+              }
+          }
+      });
+
+    $("#single_2").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
     });
-    
-    $lightbox.on('shown.bs.modal', function (e) {
-        var $img = $lightbox.find('img');
-            
-        $lightbox.find('.modal-dialog').css({'width': $img.width()});
-        $lightbox.find('.close').removeClass('hidden');
+
+    $("#single_3").fancybox({
+    	openEffect : 'none',
+    	closeEffect	: 'none',
+    	helpers : {
+    		title : {
+    			type : 'outside'
+    		}
+    	}
+    });
+
+    $("#single_4").fancybox({
+    	helpers : {
+    		title : {
+    			type : 'over'
+    		}
+    	}
     });
 });
-	</script>
+</script>
 
 </body>
 </html>

@@ -78,7 +78,9 @@ p{
 		font-size: 12px;
 	}
 }
-
+.colegios{
+	padding: 8px !important;
+}
 /* Backgrounds will cover all the section
 	* --------------------------------------- */
 	#section1,
@@ -290,6 +292,24 @@ padding-top: 1px;
 	background-color: blue;
 		display: inline-block;
 		float: left;
+		-webkit-background-size: cover !important;
+-moz-background-size: cover !important;
+-o-background-size: cover !important;
+background-size: cover !important;
+background-color: black;
+
+}
+.box{
+background: url('img/video_1.jpg') no-repeat center center;
+}
+.video_landing {
+cursor: pointer;
+position: relative;
+}
+.box-landing {
+height: 250px;
+background-color: rgb(228, 228, 228	);
+margin: 5px -10px;
 
 }
 .mensaje{
@@ -299,9 +319,10 @@ padding-top: 1px;
 		display: inline-block;
 		float: left;
 		padding-left: 40px;
-		padding-top: 	0px;
+		padding-top: 	15px;
 		padding-right: 40px;
 		padding-bottom: 20px;
+		color: black;
 
 }
 .pcontent{
@@ -328,13 +349,16 @@ width: 120px;
 border-radius: 50%;
 }
 #redes{
-	margin-top: 3%;
-	bottom: 0px;
+	margin-top: 6%;
+vertical-align: bottom;
 }
 .fotos{
-padding: 30px;
-display: inline;
-float: right; }
+margin: 0 auto;
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 30px;
+padding-left: 20px;
+}
 .navbar-brand {
 padding: 10px 15px 20.5px !important;
 }
@@ -375,4 +399,22 @@ text-align: center;
     right: -55px;
     
     z-index:1032;
+}#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+.nav-tabs {
+border-bottom: 0px !important;
+}
+.nav-tabs>li>a{
+margin-right: 2px;
+line-height: 1.42857143;
+border: 1px solid transparent;
+border-radius: 50px !important;
+}
+.login{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+
 }
